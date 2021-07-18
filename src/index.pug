@@ -1,0 +1,15 @@
+html
+	head
+		meta(charset = 'utf-8')
+		meta(name='viewport', content="initial-scale=1.0, width=device-width")
+		title Webpack app
+	body
+		p 12
+		include ./views/components/header.pug
+		include ./views/components/footer.pug
+
+		img(src=require('./assets/images/image.png'), alt="picture", width="200")
+		img(src=require('./assets/images/1111.png'), alt="picture", width="200")
+
+		script(src="bundle.js")
+		script(src="index.js")
